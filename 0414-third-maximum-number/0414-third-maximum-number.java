@@ -6,15 +6,11 @@ class Solution {
             set.add(x);
         }
         int i =0;
-        if(set.size() < 3 && i < set.size()){
-            for (Integer num : set) {
-            if(i == set.size() ){
-                return num;
-            }
-            i++;
+        if(set.size() < 3 ){
+            return set.first();
         }
 
-        }
+        
          for (Integer num : set) {
             if(i == 2){
                 return num;
@@ -22,6 +18,6 @@ class Solution {
             i++;
         }
 
-        return set.size() == 1 ? set.first() : -1;
+        return 0;
     }
 }
